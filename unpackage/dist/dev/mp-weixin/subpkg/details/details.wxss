@@ -1,0 +1,277 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.nullGg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150rpx;
+  margin-left: -150rpx;
+}
+.nullGg image {
+  width: 300rpx;
+  height: 300rpx;
+}
+.nullGg .nullGg-a {
+  margin-left: 80rpx;
+}
+.detail .detail-swiper {
+  position: relative;
+}
+.detail .detail-swiper .swiper {
+  z-index: 100;
+  height: 620rpx;
+}
+.detail .detail-swiper .swiper swiper-item view image {
+  width: 100%;
+  height: 620rpx;
+}
+.detail .detail-swiper .city {
+  padding: 5rpx 20rpx;
+  height: 50rpx;
+  border-radius: 40rpx;
+  position: absolute;
+  background: rgba(4, 8, 24, 0.4);
+  top: 20rpx;
+  left: 29rpx;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  font-weight: 600;
+}
+.detail .detail-swiper .city text {
+  margin-left: 5rpx;
+}
+.detail .detail-swiper .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.detail .detail-swiper .dots .dots-a {
+  color: #fff;
+  background: rgba(4, 8, 24, 0.4);
+  border-radius: 40rpx;
+  font-size: 24rpx;
+  padding: 5rpx 15rpx;
+  position: absolute;
+  bottom: 23rpx;
+  right: 30rpx;
+}
+.detail .detail-swiper .dots .active {
+  background-color: #d2d2d2;
+}
+.detail .detail-title {
+  background-color: #fff;
+  height: 260rpx;
+}
+.detail .detail-title .title {
+  margin-top: 20rpx;
+  height: 80rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  line-height: 80rpx;
+  color: #f33f3e;
+}
+.detail .detail-title .title .title-a {
+  font-size: 46rpx;
+}
+.detail .detail-title .title-b {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.detail .detail-title .title-c {
+  padding: 15rpx 0;
+  font-size: 26rpx;
+  color: #888b99;
+}
+.detail .detail-title .title-d {
+  margin-top: 20rpx;
+}
+.detail .detail-title .title-d .d-list {
+  margin-right: 40rpx;
+  font-size: 26rpx;
+  color: #888b99;
+}
+.detail .detail-title .title-d .d-list text {
+  margin-left: 5rpx;
+}
+.detail .comment {
+  width: 100%;
+  height: 100%;
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.detail .comment .comment-title {
+  font-size: 28rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.detail .comment .comment-title .right {
+  font-size: 24rpx;
+}
+.detail .comment .comment-title .right text {
+  color: #f33f3e;
+  margin-right: 10rpx;
+}
+.detail .comment .comment-list {
+  width: 100%;
+  margin-top: 30rpx;
+  overflow-y: scroll;
+  display: flex;
+}
+.detail .comment .comment-list .comment-item {
+  width: 500rpx;
+  padding-right: 50rpx;
+  flex-shrink: 0;
+}
+.detail .comment .comment-list .comment-item .comment-img {
+  display: flex;
+}
+.detail .comment .comment-list .comment-item .comment-img .img image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.detail .comment .comment-list .comment-item .comment-img .info {
+  margin-left: 30rpx;
+}
+.detail .comment .comment-list .comment-item .comment-img .info .user {
+  display: flex;
+}
+.detail .comment .comment-list .comment-item .comment-img .info .name {
+  margin-right: 10rpx;
+}
+.detail .comment .comment-list .comment-item .comment-img .info .star {
+  margin-top: 8rpx;
+}
+.detail .comment .comment-list .comment-item .comment-img .info .evaluate {
+  display: flex;
+  margin-top: 10rpx;
+}
+.detail .comment .comment-list .comment-item .comment-img .info .evaluate .evaluate-icon {
+  margin-right: 20rpx;
+  border: 1px solid #e4e7eb;
+  border-radius: 4rpx;
+  color: #888b99;
+  font-size: 24rpx;
+}
+.detail .comment .comment-list .comment-item .comment-desc .desc-top {
+  font-size: 28rpx;
+  padding: 30rpx 0;
+}
+.detail .comment .comment-list .comment-item .comment-desc .desc-button image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 6rpx;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;
+}
+.detail .detail-list {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.detail .detail-list .detail-list-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+.detail .detail-list .detail-item image {
+  width: 100%;
+  height: 900rpx;
+}
+.detail .location {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+}
+.detail .location .van-ellipsis {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.detail .option .van-popup {
+  width: 95%;
+  margin: 0 20rpx;
+  border-radius: 10rpx 10rpx 0 0;
+}
+.detail .option .van-popup .option-popup {
+  padding: 40rpx 30rpx;
+}
+.detail .option .van-popup .option-popup .option-title {
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.detail .option .van-popup .option-popup .option-title2 {
+  margin-top: 20rpx;
+  font-size: 34rpx;
+}
+.detail .option .van-popup .option-list .option-item {
+  margin: 0 20rpx 20rpx 20rpx;
+  padding: 18rpx 0;
+  border: 1rpx solid #fff;
+}
+.detail .option .van-popup .option-list .option-item .left {
+  margin-left: 30rpx;
+}
+.detail .option .van-popup .option-list .option-item .left image {
+  width: 80rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+}
+.detail .option .van-popup .option-list .option-item .left text {
+  margin-left: 10rpx;
+}
+.detail .option .van-popup .option-list .option-item .right {
+  color: #f33f3e;
+  margin-right: 30rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+.detail .option .van-popup .option-list .option-item .right text {
+  font-size: 34rpx;
+  font-weight: 500;
+}
+.detail .option .van-popup .option-list .active-gg {
+  background-color: #fff8f7;
+  border: 1rpx solid #f33f3e;
+  border-radius: 10rpx;
+}
+.detail .option .van-popup .option-button {
+  width: 95%;
+  height: 80rpx;
+  bottom: 30rpx;
+  padding: 0 20rpx;
+}
+.detail .option .van-popup .option-button .van-goods-action {
+  margin: 0 30rpx;
+}

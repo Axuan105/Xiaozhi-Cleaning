@@ -1,0 +1,15 @@
+"use strict";
+require("../index.js");
+const utils_request = require("../../utils/request.js");
+const reqGetSwiper = () => utils_request.$http.get("/mini/min/picture");
+const reqGetDate = (cid) => utils_request.$http.get(`/mini/min/getdata?cid=${cid}`);
+const reqGetDate2 = (cid) => utils_request.$http.get(`/mini/min/getdata`);
+const reqGetgetlm = () => utils_request.$http.get("/mini/min/getlm");
+const reqGetSearch = (data) => utils_request.$http.post("/mini/min/sousuo", data);
+const reqGetHotSearch = () => utils_request.$http.get("/mini/min/rcfl");
+exports.reqGetDate = reqGetDate;
+exports.reqGetDate2 = reqGetDate2;
+exports.reqGetHotSearch = reqGetHotSearch;
+exports.reqGetSearch = reqGetSearch;
+exports.reqGetSwiper = reqGetSwiper;
+exports.reqGetgetlm = reqGetgetlm;

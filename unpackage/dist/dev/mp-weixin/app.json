@@ -1,0 +1,89 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "remark/remark",
+        "anchor/anchor",
+        "details/details",
+        "search/search",
+        "login/login",
+        "order-state/order-state",
+        "address/address",
+        "add-address/add-address",
+        "service/service",
+        "place-order/place-order",
+        "cancelOrder/cancelOrder",
+        "refer-remark/refer-remark"
+      ]
+    }
+  ],
+  "usingComponents": {
+    "van-button": "wxcomponents/vant/button/index",
+    "van-icon": "/wxcomponents/vant/icon/index",
+    "van-index-bar": "/wxcomponents/vant/index-bar/index",
+    "van-index-anchor": "/wxcomponents/vant/index-anchor/index",
+    "van-cell": "/wxcomponents/vant/cell/index",
+    "van-cell-group": "/wxcomponents/vant/cell-group/index",
+    "van-field": "/wxcomponents/vant/field/index",
+    "van-checkbox": "/wxcomponents/vant/checkbox/index",
+    "van-tab": "/wxcomponents/vant/tab/index",
+    "van-tabs": "/wxcomponents/vant/tabs/index",
+    "van-steps": "/wxcomponents/vant/steps/index",
+    "van-rate": "/wxcomponents/vant/rate/index",
+    "van-goods-action": "/wxcomponents/vant/goods-action/index",
+    "van-goods-action-icon": "/wxcomponents/vant/goods-action-icon/index",
+    "van-goods-action-button": "/wxcomponents/vant/goods-action-button/index",
+    "van-tag": "/wxcomponents/vant/tag/index",
+    "van-radio": "/wxcomponents/vant/radio/index",
+    "van-radio-group": "/wxcomponents/vant/radio-group/index",
+    "van-switch": "/wxcomponents/vant/switch/index",
+    "van-area": "/wxcomponents/vant/area/index",
+    "van-search": "/wxcomponents/vant/search/index",
+    "van-popup": "/wxcomponents/vant/popup/index"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-shop",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F5F5F5"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#9A9A9A",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/204首页 (1).png",
+        "selectedIconPath": "/static/204首页.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/order/order",
+        "iconPath": "static/订单 (1).png",
+        "selectedIconPath": "static/订单.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/我的.png",
+        "selectedIconPath": "static/我的 (1).png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "测试"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ]
+}

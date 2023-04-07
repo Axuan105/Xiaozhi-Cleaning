@@ -1,0 +1,13 @@
+"use strict";
+require("../index.js");
+const utils_request = require("../../utils/request.js");
+const reqgetdzList = () => utils_request.$http.post("/mini/abc/getdz");
+const reqgetdz = (data) => utils_request.$http.post("/mini/abc/getdzz", data);
+const reqGetAddress = (data) => utils_request.$http.post("/mini/abc/adddz", data);
+const reqPutAddress = (data) => utils_request.$http.put("/mini/abc/putdz", data);
+const reqDeleteAddress = (id) => utils_request.$http.delete(`/mini/abc/deldz/${id}`);
+exports.reqDeleteAddress = reqDeleteAddress;
+exports.reqGetAddress = reqGetAddress;
+exports.reqPutAddress = reqPutAddress;
+exports.reqgetdz = reqgetdz;
+exports.reqgetdzList = reqgetdzList;
